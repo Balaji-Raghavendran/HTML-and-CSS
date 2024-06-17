@@ -1,0 +1,104 @@
+nav{
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+ul, h1, li{
+    display: inline;
+
+}
+
+ul{
+    margin-left: 60%;
+}
+
+li{
+    color: gray;
+    cursor: pointer;
+}
+
+li:hover{
+    color: white;
+}
+
+h1:hover{
+    color: red;
+    cursor: pointer;
+}
+
+input{
+    width: 60%;
+    padding: 15px;
+}
+
+.searchbar{
+    padding: 50px;
+    text-align: center;
+}
+
+.box{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    width: 183px;
+}
+
+.box_2 img {
+    height: 275px;
+    width: 183px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+}
+
+.box_2{
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    display: inline-block;
+    width: 183px;
+}
+
+.products{
+    text-align: center;
+}
+
+.box:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.box_2:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.about{
+    margin-top: 20px;
+}
+
+.contact{
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h2:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.number:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+.gmail:hover{
+    color: blue;
+    cursor: pointer;
+}
+
