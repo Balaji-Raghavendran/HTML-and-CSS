@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+  font-family: "Moderustic", sans-serif;
+  background-color: darkorchid;
+  
+}
+
+
+.titlebar{
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+h1:hover{
+  color: red;
+  cursor: pointer;
+}
+
+
+.container {
+  color: white;
+  padding: 10px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container h2:hover {
+  color: yellow;
+  cursor: pointer;
+}
+
+.container img {
+  padding: 10px;
+  width: 300px;
+}
+
+
+ 
+
+
+
+
+  
