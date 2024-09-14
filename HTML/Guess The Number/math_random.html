@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Guess the number</title>
+    </head>
+
+    <body>
+        <h1>GUESS THE NUMBER!</h1>
+        <input id="guessnumber">
+        <button onclick="checknumber()">Check</button>
+        <p id="result">You are Wrong/right</p>
+        <p id="getscore">Score:10</p>
+
+
+        <script>
+            var guessnumber = document.getElementById("guessnumber")
+            var result = document.getElementById("result")
+            var getscore = document.getElementById("getscore")
+            var randomNumber = Math.floor(Math.random()*10)+1            
+            var score = 10
+
+            function checknumber()
+            {
+                var enterednumber = guessnumber.value
+                if(randomNumber==enterednumber) 
+                {
+                    console.log("right")
+                    result.textContent="right"
+                    alert("You Won...")
+
+                }
+                else
+                {
+                    score = score-1
+                    score.textContent="score:"+score
+                    console.log("wrong")
+                    result.textContent="wrong"
+
+                }
+
+            }
+
+
+
+
+
+
+
+
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
