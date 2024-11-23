@@ -21,7 +21,7 @@ If you have ideas for additional Python codes  or improvements to existing ones,
 
 1. Fork the repository to your GitHub account.
 
-2. Make your changes or add your python code or a mini python project.
+2. Make your changes or add your HTML OR CSS projects.
 
 3. Create a pull request with a clear description of your changes.
 
