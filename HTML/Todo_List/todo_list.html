@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<div class="style">
+    <h1 class="header">TODO LIST</h1>
+<input id="input">
+<button id="button1" onclick="add()">Add</button>
+
+<ul id="list-container" style="display: none;">
+</ul>
+</div>
+
+
+<style>
+    #button1{
+        padding: 5px;
+        width: 50px;
+        margin: auto;
+        border: 3px solid orangered;
+        background-color: #fff567;
+        cursor: pointer;
+    }
+    #button1:hover{
+        color: white;
+        background-color: black;
+    }
+    #input{
+        padding: 5px;
+        border: 3px solid black;
+        border-radius: 7px;
+    }
+    .style{
+        padding: 40px;
+        padding-left: 80px;
+        width: 300px;
+        min-height: 500px;
+        border: 5px solid red;
+        border-radius: 6px;
+        margin:auto;
+        background-color: blue;
+        opacity: 0.8;
+        
+    }
+    #button2{
+        padding: 3px;
+        margin: auto;
+        border: 3px solid red;
+        background-color: orange;
+        cursor: pointer;
+    }
+    #button2:hover{
+        color: white;
+        background-color: black;
+    }
+    #list-container{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        list-style-type: none;
+    }
+    #list-container li{
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .header{
+        font-size: 25px;
+        text-align: justify;
+    }
+
+    </style>
+    
+
+
+<script>
+    var ul = document.getElementById("list-container")
+    var input = document.getElementById("input")
+    function add()
+    {
+    if (input.value.trim() !== "")
+    {
+            if (ul.style.display === "none") {
+                ul.style.display = "block";
+            }
+        
+        var listitem = document.createElement("li")
+        listitem.innerHTML=input.value + "<button id='button2' onclick='deleteitem(event)'>Delete</button>"
+        ul.append(listitem)
+        input.value = "";
+    } else {
+            alert("Please enter a valid task!");
+        }
+    }
+
+    function deleteitem(event)
+    {
+        event.target.parentElement.remove()
+        if (ul.children.length === 0) {
+            ul.style.display = "none";
+        }
+
+    }
+ 
+
+
+
+</script>
+</html>
